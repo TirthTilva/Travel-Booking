@@ -78,94 +78,189 @@
 
 
 
-body {
-  background-color: antiquewhite;
-  margin: 0;
-  font-family: Arial, sans-serif;
+.App {
+  text-align: center;
 }
 
-.container {
-  padding: 20px;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-table {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border-collapse: separate;
-  border-spacing: 0 10px;
-  background-color: #003b42;
-  width: 1707px;
-  height: 70px;
-  margin-left: -20px;
-  margin-top: -20px;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.login {
-  background-color: transparent;
-  border-radius: 0%;
-  border: 0px;
-  padding: 20px;
-  margin-left: 800px;
-  color: aliceblue;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: none;
-}
-.signup
-{
-  background-color: transparent;
-  border-radius: 0%;
-  border: 0px;
-  padding: 20px;
-  color: aliceblue;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-right: 700px;
-  border: none;
-}
-
-td button:hover {
-  background-color:#05545d;
-}
-
-.search-container {
-  position: relative;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.search-container input[type="text"] {
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #003b42;
+  padding: 15px 40px;
+  color: white;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.auth-buttons button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 20px;
+  margin-left: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.auth-buttons .signup-btn {
+  background-color: #006b76;
+}
+
+/* Headline */
+.headline {
+  text-align: center;
+  color: #003b42;
+  margin-top: 30px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
   padding: 10px;
-  width: 1000px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  padding-right: 50px;
-  box-sizing: border-box;
-  height: 60px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1400px;
+  margin: 20px auto;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Input Wrapper */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  gap: 10px;
+}
+
+.icon {
+  color: #888;
+}
+
+input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
   font-size: 20px;
 }
 
-.search-container button {
+/* Guests Dropdown */
+.guests {
+  position: relative;
+}
+
+.guest-label {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.guest-dropdown {
+  display: none;
   position: absolute;
-  right: 340px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 10;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.guests:hover .guest-dropdown {
+  display: block;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.counter button {
   background-color: #003b42;
   color: white;
   border: none;
-  padding: 8px 12px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.counter button:hover {
+  background-color: #005a5c;
+}
+
+/* Search Button */
+.search-btn {
+  background-color: #006b76;
+  color: white;
+  border: none;
+  padding: 12px 25px;
   border-radius: 20px;
   cursor: pointer;
-  font-size: 14px;
-  height: 50px;
-  width: 80px;
+  font-size: 16px;
   font-size: 20px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
-.search-container button:hover {
-  background-color: #05545d;
+
+.search-btn:hover {
+  background-color: #004f52;
 }
