@@ -24,7 +24,7 @@ const SignUp = () => {
     }),
     onSubmit: (values) => {
       console.log("Form Submitted:", values);
-    //   alert("Signup Successful!");
+      alert("Signup Successful!");
     },
   });
 
