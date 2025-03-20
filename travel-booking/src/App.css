@@ -36,3 +36,136 @@
     transform: rotate(360deg);
   }
 }
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+table {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  background-color: #003b42;
+  width: 1707px;
+  height: 70px;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.login {
+  background-color: transparent;
+  border-radius: 0%;
+  border: 0px;
+  padding: 20px;
+  margin-left: 800px;
+  color: aliceblue;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+.signup
+{
+  background-color: transparent;
+  border-radius: 0%;
+  border: 0px;
+  padding: 20px;
+  color: aliceblue;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 700px;
+  border: none;
+}
+
+td button:hover {
+  background-color:#05545d;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  width: 1000px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  height: 60px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.search-container button {
+  position: absolute;
+  right: 340px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #003b42;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 50px;
+  width: 80px;
+  font-size: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.search-container button:hover {
+  background-color: #05545d;
+}
